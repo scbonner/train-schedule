@@ -1,0 +1,148 @@
+<!-- Design skeleton outline for train project -->
+<!-- Sketch outline of look -->
+<!-- Link a CSS to file -->
+<!-- Project has to be colorful and interactive by using JS -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/trainschedule.css">
+    <script src="./assets/javascript/trainschedule.js"></script>
+</head>
+
+
+
+<title>Daily Train3 Schedule</title>
+
+<body>
+
+
+<div class="container">
+<div class="jumbotron text-center" style="background-color: orangered">
+        <h1><u>Daily Train Schedule Listings</u>
+<br>               
+<br>
+<p class="italic">Enjoy a Scenic View of North Carolina From the Mountains to the Ocean!</p>
+    </div>
+
+    <div class="container">
+        <table class="table table-hover" id="trainSchedule">
+        <thead>
+        <tr>
+        <th>Train Name</th>
+            <th>Destination</th>
+            <th>Frequency (Min)</th>
+            <th>Next Arrival</th>
+            <th>Minutes Away<br>
+                </th>
+            </tr>
+        </thead>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+            <div class="overlay">
+        <tbody>
+            <tr>
+                <td>Steelers</td>
+                <td>Ashville</td>
+                <td>45</td>
+                <td>01:45AM</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Eagles</td>
+                <td>Durham</td>
+                <td>120</td>
+                <td>10:00PM</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Forty Niner</td>
+                <td>Charlotte</td>
+                <td>240</td>
+                <td>12:00PM</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>Saint</td>
+                <td>Winston Salem</td>
+                <td>600</td>
+                <td>04:00PM</td>
+                <td>60</td>
+            </tr>
+        
+            <tr>
+                <td>Viking</td>
+                <td>Wrightsville</td>
+                <td>15</td>
+                <td>10:00PM</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>Titan</td>
+                <td>Greensboro</td>
+                <td>120</td>
+                <td>10:00PM</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Cardinal</td>
+                <td>Raleigh</td>
+                <td>120</td>
+                <td>10:00PM</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Patriot</td>
+                <td>Lumberton</td>
+                <td>120</td>
+                <td>6:00AM</td>
+                <td>240</td>
+            </tr>
+        </thead>
+        <tbody id="trainAdd"></tbody>
+        </tbody>
+        </table>
+        </div>
+</div>
+<br><div class="card">
+        <div class="card-header">
+            <strong><u>ADD THE NAME OF YOUR TRAIN</u></strong>
+        </div>
+        <form class="form-submit">
+            <div class="form-group form-modify">
+                <label for="trainName">Train Name</label>
+                <input type="text" class="form-control inputs" id="trainLoad" placeholder=" ">
+                <label for="trainDestination">Destination</label>
+                <input type="text" class="form-control inputs" id="destinationLoad" placeholder="">
+                <label for="trainStartTime">Train Start Time (HH:mm Military Time)</label>
+                <input type="text" class="form-control inputs" id="trainStartLoad" placeholder="">
+                <label for="frequencyLoad">Frequency (Min)</label>
+                <input type="text" class="form-control inputs" id="trainFrequency" placeholder="">
+                <button id="btn btn-primary btnAdd mt-2">Submit</button>
+            </div>
+        </form>
+
+    </div>
+  </div>
+  
+
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+</body>
+
+</html>

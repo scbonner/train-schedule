@@ -1,0 +1,24 @@
+
+body  {
+    background-image: url("img_.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+
+.container {
+
+    height: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* background-image: url("../images/splashpaint.jpg"); */
+    background-position: center;
+    background-size: cover;
+    color: yellow;
+}
+.h2 {
+    background-position: center;
+    
+
+}
+
